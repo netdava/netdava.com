@@ -5,27 +5,18 @@ image: /img/ploiesti-view.jpg
 blurb:
   heading: Why Netdava?
   text: >-
-    Netdava is a company built by passion to deliver great value to it's
+    Netdava is a company built from passion to deliver great value to it's
     customers.
 intro:
   heading: What we offer
   text: >-
-    Netdava International offers a small range of services that can add value to
-    your business
-products:
-  - image: img/illustrations-coffee.svg
-    text: >-
-      We sell green and roasted coffee beans that are sourced directly from
-      independent farmers and farm cooperatives. We’re proud to offer a variety
-      of coffee beans grown with great care for the environment and local
-      communities. Check our post or contact us directly for current
-      availability.
-  - image: /img/illustrations-coffee-gear.svg
-    text: >-
-      We offer a small, but carefully curated selection of brewing gear and
-      tools for every taste and experience level. No matter if you roast your
-      own beans or just bought your first french press, you’ll find a gadget to
-      fall in love with in our shop.
+    Netdava offers a range of IT services that can add value to your business.
+    We love building API's, Software-as-a-Service systems and similar software.
+    We also offer  consultancy in this area and can work with your exiting team.
+services:
+  - text: >-
+      API design - we love designing and building API's to help build your
+      company.
 values:
   heading: Our values
   text: >-
