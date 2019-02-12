@@ -5,14 +5,13 @@ image: /img/ploiesti-view.jpg
 blurb:
   heading: Why Netdava?
   text: >-
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    Netdava is a company built by passion to deliver great value to it's
+    customers.
 intro:
   heading: What we offer
   text: >-
-    Netdava International offers a small range of services that can add value to your business
+    Netdava International offers a small range of services that can add value to
+    your business
 products:
   - image: img/illustrations-coffee.svg
     text: >-
