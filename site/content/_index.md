@@ -14,7 +14,8 @@ intro:
     We love building API's, Software-as-a-Service systems and similar software.
     We also offer  consultancy in this area and can work with your exiting team.
 services:
-  - text: >-
+  - image: /img/netdava-logo.svg
+    text: >-
       API design - we love designing and building API's to help build your
       company.
 values:
