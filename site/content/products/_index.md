@@ -1,5 +1,5 @@
 ---
-title: Our Coffee
+title: Our Services
 type: products
 image: /img/products-jumbotron.jpg
 heading: What we offer
@@ -38,11 +38,19 @@ intro:
         coffee making techniques. All of the artwork on display there is for
         sale. The full price you pay goes to the artist.
   heading: What we offer
-  description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
+  description: 
+    Netdava International is a software company based in Romania offering 
+    services like 
+  services: 
+      - definition: Web Development
+      - definition: PDF Report design
+      - definition: IT Application Development
+      - definition: Business Process Automation
+      - definition: Business digitalisation 
+      - definition: GDPR and Cookie consent setup
+      - definition: Cloud consultancy services
+      
+    
 main:
   heading: Great coffee with no compromises
   description: >

@@ -1,7 +1,7 @@
 ---
 title: Netdava
 subtitle: Technology working for you
-image: /img/home-jumbotron.jpg
+image: /img/ploiesti-view.jpg
 blurb:
   heading: Why Netdava?
   text: >-
@@ -12,10 +12,7 @@ blurb:
 intro:
   heading: What we offer
   text: >-
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone.
+    Netdava International offers a small range of services that can add value to your business
 products:
   - image: img/illustrations-coffee.svg
     text: >-
