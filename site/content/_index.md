@@ -18,6 +18,13 @@ services:
     text: >-
       API design - we love designing and building API's to help build your
       company.
+technologies: 
+  - title: Web Development
+    list: GraphQL, JavaScript, React, Hugo, CSS, HTML5, SaSS, Ajax.
+  - title: Infrastrucure and code
+    list: Kubernetes, Terraform, Git, Gradle, Java, Node.js, BPMN, Camunda.
+  - title: Data
+    list: PostgreSQL, SQLite
 values:
   heading: Our values
   text: >-
