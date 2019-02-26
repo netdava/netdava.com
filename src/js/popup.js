@@ -28,7 +28,7 @@ $.fn.euCookieLawPopup = (function() {
 	///////////////////////////////////////////////////////////////////////////////////////////////
 	// PARAMETERS (MODIFY THIS PART) //////////////////////////////////////////////////////////////
 	_self.params = {
-		cookiePolicyUrl : 'http://www.wimagguc.com/?cookie-policy',
+		cookiePolicyUrl : 'https://en.wikipedia.org/wiki/HTTP_cookie',
 		popupPosition : 'top',
 		colorStyle : 'default',
 		compactStyle : false,
