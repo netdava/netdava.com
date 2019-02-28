@@ -9,7 +9,7 @@ blurb:
     customers.
 intro:
   heading: What we offer
-  subtitle: 'We have expertise with the following technologies:'
+  subtitle: 'We have expertise with the following technologies: abc'
   text: >-
     Netdava offers a range of IT services that can add value to your business.
     We love building API's, Software-as-a-Service systems and similar software.
