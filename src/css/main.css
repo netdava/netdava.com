@@ -136,6 +136,3 @@ article.clients h6 {
     justify-content: center;
     flex-wrap:wrap;
 }
-.bg-fix-primary h1, .bg-fix-primary p {
-   background-color: rgba(0, 159, 220, 0.7)
-}

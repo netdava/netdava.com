@@ -1,7 +1,7 @@
 ---
 title: Netdava
 subtitle: Technology working for you
-image: /img/landing-page.jpg
+image: /img/ploiesti-view.jpg
 blurb:
   heading: Why Netdava?
   text: >-
