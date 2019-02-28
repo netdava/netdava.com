@@ -45,6 +45,32 @@ collections: # A list of collections the CMS should be able to edit
               - label: Href
                 name: href
                 widget: text
+          - label: "Infrastructure and code technologies"
+            name: infrastrucure_and_code_technologies
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Source
+                name: src
+                widget: text
+              - label: Href
+                name: href
+                widget: text
+          - label: "Data technologies"
+            name: data_technologies
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Source
+                name: src
+                widget: text
+              - label: Href
+                name: href
+                widget: text
           # - {label: "Services", name: services, widget: list, fields: [
           #     {label: "Image", name: "image", widget: "image"},
           #     {label: "Text", name: "text", widget: "text"}]}
