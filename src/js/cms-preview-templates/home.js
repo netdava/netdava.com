@@ -41,15 +41,15 @@ export default class PostPreview extends React.Component {
           </div>
         </div>
 
-        <div className="bg-grey-1 pv4">
+        {/* <div className="bg-grey-1 pv4">
           <div className="ph3 mw7 center">
 
             <div className="flex-l mhn2-l">
-              {/* <div className="w-40-l ph2-l">
+              <div className="w-40-l ph2-l">
                 <h2 className="f2 b lh-title mb2">{entry.getIn(["data", "values", "heading"])}</h2>
 
                 <p>{entry.getIn(["data", "values", "text"])}</p>
-              </div> */}
+              </div>
 
               <div className="w-60-l ph2-l">
                 <img src="/img/home-about-section.jpg" alt="" className="mb3"/>
@@ -61,7 +61,7 @@ export default class PostPreview extends React.Component {
             </div>
 
           </div>
-        </div>
+        </div> */}
 
 
     </div>
