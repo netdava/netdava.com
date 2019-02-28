@@ -64,9 +64,6 @@ infrastrucure_and_code_technologies:
   - href: 'https://camunda.com/'
     src: /img/technology-stack/camunda-logo.svg
     title: Camunda
-  - href: go here
-    src: /img/technology-stack/camunda-logo.svg
-    title: Test Testt
 data_technologies:
   - href: 'https://www.postgresql.org/'
     src: /img/technology-stack/postgresql-logo.svg
