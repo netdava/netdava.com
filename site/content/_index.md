@@ -8,7 +8,7 @@ blurb:
     Netdava is a company built from passion to deliver great value to it's
     customers.
 intro:
-  expertise: 'We have expertise with the following technologies: abc'
+  expertise: 'We have expertise with the following technologies:'
   heading: What we offer
   text: >-
     Netdava offers a range of IT services that can add value to your business.
