@@ -93,7 +93,7 @@
 	text-align: center;
 	width: 150px;
 	height: 100px;
-	margin-right: 15px;
+	margin-right: 10px;
     margin-bottom: 25px;
     margin-top: 20px;
 	-webkit-border-radius: 3px;
@@ -131,11 +131,48 @@ article.clients h6 {
     margin-top: 50px;
 }
 
-.flexb {
+.flexb, .services-wrapper {
     display: flex;
     justify-content: center;
     flex-wrap:wrap;
 }
 .bg-fix-primary h1, .bg-fix-primary p {
    background-color: rgba(0, 159, 220, 0.7)
+}
+
+.services-wrapper .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+	text-align: center;
+    width: 250px;
+    height: 200px;
+    
+	margin-right: 15px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.services-wrapper .card:nth-child(even) {
+    background-color: gainsboro;
+}
+.services-wrapper .card:nth-child(odd) {
+    background-color: darkgray;
+}
+.services-wrapper .card h6 {
+    font-size: .8rem;
+    padding-bottom: 15px;
+}
+.services-wrapper {
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+.card .icon-wrapper {
+    padding:50px;
+}
+.card .icon-wrapper i {
+    font-size: 1.8em;
 }
