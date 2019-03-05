@@ -1,11 +1,11 @@
 ---
-title: "Contact"
-logo: "/img/netdava-logo.svg"
+title: Contact
+logo: /img/netdava-logo.svg
 contact_entries:
   - heading: Location
-    text: "Ploiești, 100285 Aleea Arnăuți, Romania"
+    text: 'Ploiești, 100285 Aleea Arnăuți, Romania'
   - heading: Working hours
-    text: "Monday – Saturday: 9AM – 7PM We’re closed on Sundays"
+    text: 'Monday – Friday: 9AM – 7PM'
 ---
 
 We’d love to get in touch with you and hear your ideas and
