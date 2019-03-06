@@ -28,18 +28,43 @@ export default class PostPreview extends React.Component {
             <h2 className="f2 b lh-title mb2">{entry.getIn(["data", "intro", "heading"])}</h2>
             <p className="mb4 mw6">{entry.getIn(["data", "intro", "text"])}</p>
 
-            <h3 class="f3 b lh-title mb2">{entry.getIn(["data", "intro", "expertise"])}</h3>
-            <h4 class="f4 b lh-title mb2 primary tech-stack-title">Web Development</h4>
-
-            <div class="flexb">
-
-            {(entry.getIn(["data", "web_dev_technologies"]) || []).map((web_dev_technology, i) => <article class="clients last" key={i}>
-                <span></span><a href={getAsset(web_dev_technology.get("href"))}><img src={getAsset(web_dev_technology.get("src"))} alt={getAsset(web_dev_technology.get("title"))}/></a>
-                <h6>{web_dev_technology.get("title")}</h6>
-            </article>)}
-
+            <div class="services-wrapper">
+              {entry.getIn(["data", "services"]) || [].map((service,i) => 
+                <div class="card" key={i}>
+                <div class="icon-wrapper">{service.get("icon")}</div>
+                <h6>{service.get("definition")}</h6>
+                </div>
+              )}
             </div>
-           
+
+            <h3 class="f3 b lh-title mb2">{entry.getIn(["data", "intro", "expertise"])}</h3>
+            
+            <h4 class="f4 b lh-title mb2 primary tech-stack-title">Web Development</h4>
+            <div class="flexb">
+              {(entry.getIn(["data", "web_dev_technologies"]) || []).map((web_dev_technology, i) => <article class="clients last" key={i}>
+                  <span></span><a href={getAsset(web_dev_technology.get("href"))}><img src={getAsset(web_dev_technology.get("src"))} alt={getAsset(web_dev_technology.get("title"))}/></a>
+                  <h6>{web_dev_technology.get("title")}</h6>
+              </article>)}
+            </div>
+
+            <h4 class="f4 b lh-title mb2 primary tech-stack-title">Infrastrucure and code</h4>
+            <div class="flexb">
+              {(entry.getIn(["data", "infrastrucure_and_code_technologies"]) || []).map((ic_technology, i) => <article class="clients last" key={i}>
+                    <span></span><a href={getAsset(ic_technology.get("href"))}><img src={getAsset(ic_technology.get("src"))} alt={getAsset(ic_technology.get("title"))}/></a>
+                    <h6>{ic_technology.get("title")}</h6>
+              </article>)}
+            </div>
+
+            <h4 class="f4 b lh-title mb2 primary tech-stack-title">Data</h4>
+            <div class="flexb">
+              {(entry.getIn(["data", "data_technologies"]) || []).map((data_technology, i) => <article class="clients last" key={i}>
+                  <span></span><a href={getAsset(data_technology.get("href"))}><img src={getAsset(data_technology.get("src"))} alt={getAsset(data_technology.get("title"))}/></a>
+                  <h6>{data_technology.get("title")}</h6>
+              </article>)}
+            </div>
+
+            
+
           </div>
         </div>
     </div>

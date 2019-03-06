@@ -13,7 +13,20 @@ intro:
   text: >-
     Netdava offers a range of IT services that can add value to your business.
     We love building API's, Software-as-a-Service systems and similar software.
-    We also offer  consultancy in this area and can work with your exiting team.
+    We also offer  consultancy in this area and can work together with your team.
+services:
+  - definition: Web Development
+    icon: '<i class="fas fa-code"></i>'
+  - definition: PDF Report design
+    icon: '<i class="fas fa-database"></i> <i class="fas fa-long-arrow-alt-right"></i> <i class="fas fa-file-invoice"></i>'
+  - definition: IT Application Development
+    icon: '<i class="fas fa-terminal"></i>'
+  - definition: Business Process Automation
+    icon: '<i class="fas fa-recycle"></i>'
+  - definition: Business digitalisation
+    icon: '<i class="fas fa-robot"></i>' 
+  - definition: Cloud consultancy services
+    icon: '<i class="fas fa-cloud-meatball"></i>'
 web_dev_technologies:
   - href: 'https://graphql.org'
     src: /img/technology-stack/graphql-logo.svg
