@@ -35,7 +35,7 @@ export default class PostPreview extends React.Component {
 
             {(entry.getIn(["data", "web_dev_technologies"]) || []).map((web_dev_technology, i) => <article class="clients last" key={i}>
                 <span></span><a href={getAsset(web_dev_technology.get("href"))}><img src={getAsset(web_dev_technology.get("src"))} alt={getAsset(web_dev_technology.get("title"))}/></a>
-                <h6>{product.get("title")}</h6>
+                <h6>{web_dev_technology.get("title")}</h6>
             </article>)}
 
             </div>
