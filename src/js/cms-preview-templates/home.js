@@ -29,43 +29,19 @@ export default class PostPreview extends React.Component {
             <p className="mb4 mw6">{entry.getIn(["data", "intro", "text"])}</p>
 
             <h3 class="f3 b lh-title mb2">{entry.getIn(["data", "intro", "expertise"])}</h3>
+            <h4 class="f4 b lh-title mb2 primary tech-stack-title">Web Development</h4>
 
-            <div className="flex-ns mhn2-ns mb3">
-              {(entry.getIn(["data", "products"]) || []).map((product, i) => <div className="ph2-ns w-50-ns" key={i}>
-                <img src={getAsset(product.get("image"))} alt="" className="center db mb3" style={{width: "240px"}}/>
-                <p>{product.get("text")}</p>
-              </div>)}
+            <div class="flexb">
+
+            {(entry.getIn(["data", "web_dev_technologies"]) || []).map((web_dev_technology, i) => <article class="clients last" key={i}>
+                <span></span><a href={getAsset(web_dev_technology.get("href"))}><img src={getAsset(web_dev_technology.get("src"))} alt={getAsset(web_dev_technology.get("title"))}/></a>
+                <h6>{product.get("title")}</h6>
+            </article>)}
+
             </div>
-
-            {/* <div className="tc">
-              <a href="#" className="btn raise">See all products</a>
-            </div> */}
+           
           </div>
         </div>
-
-        {/* <div className="bg-grey-1 pv4">
-          <div className="ph3 mw7 center">
-
-            <div className="flex-l mhn2-l">
-              <div className="w-40-l ph2-l">
-                <h2 className="f2 b lh-title mb2">{entry.getIn(["data", "values", "heading"])}</h2>
-
-                <p>{entry.getIn(["data", "values", "text"])}</p>
-              </div>
-
-              <div className="w-60-l ph2-l">
-                <img src="/img/home-about-section.jpg" alt="" className="mb3"/>
-              </div>
-            </div>
-
-            <div className="tc">
-              <a href="{{.buttonLink}}" className="btn raise">Read more</a>
-            </div>
-
-          </div>
-        </div> */}
-
-
     </div>
   }
 }

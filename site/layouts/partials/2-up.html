@@ -54,7 +54,7 @@
     <div class="flexb">
     {{ range .web_dev_technologies}}  
     <article class="clients last">
-      <span></span><a href="{{ .href }}"><img src="{{ .src }}" alt="logo" /></a>
+      <span></span><a href="{{ .href }}"><img src="{{ .src }}" alt="{{ .title }} + logo" /></a>
       <h6>{{ .title }}</h6>
     </article>
     {{ end }}
@@ -64,7 +64,7 @@
     <div class="flexb">
     {{ range .infrastrucure_and_code_technologies}}
     <article class="clients last">
-      <span></span><a href="{{ .href }}"><img src="{{ .src }}" alt="logo" /></a>
+      <span></span><a href="{{ .href }}"><img src="{{ .src }}" alt="{{ .title }} + logo" /></a>
       <h6>{{ .title }}</h6>
     </article>
     {{ end }}
@@ -74,7 +74,7 @@
     <div class="flexb">
     {{ range .data_technologies}}
     <article class="clients last">
-      <span></span><a href="{{ .href }}"><img src="{{ .src }}" alt="logo" /></a>
+      <span></span><a href="{{ .href }}"><img src="{{ .src }}" alt="{{ .title }} + logo" /></a>
       <h6>{{ .title }}</h6>
     </article>
     {{ end }}
