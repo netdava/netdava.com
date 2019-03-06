@@ -29,7 +29,7 @@ export default class PostPreview extends React.Component {
             <p className="mb4 mw6">{entry.getIn(["data", "intro", "text"])}</p>
 
             <div class="services-wrapper">
-              {entry.getIn(["data", "services"]) || [].map((service,i) => 
+              {(entry.getIn(["data", "services"]) || []).map((service,i) => 
                 <div class="card" key={i}>
                 <div class="icon-wrapper">{service.get("icon")}</div>
                 <h6>{service.get("definition")}</h6>
