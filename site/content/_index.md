@@ -64,6 +64,12 @@ infrastrucure_and_code_technologies:
   - href: 'https://camunda.com/'
     src: /img/technology-stack/camunda-logo.svg
     title: Camunda
+  - href: 'https://oauth.net/2/'
+    src: /img/oauth-2-sm.png
+    title: Oauth2
+  - href: 'https://openid.net/'
+    src: /img/openid-icon-100x100.png
+    title: OpenId Connect
 data_technologies:
   - href: 'https://www.postgresql.org/'
     src: /img/technology-stack/postgresql-logo.svg
