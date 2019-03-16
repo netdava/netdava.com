@@ -62,9 +62,6 @@ export default class PostPreview extends React.Component {
                   <h6>{data_technology.get("title")}</h6>
               </article>)}
             </div>
-
-            
-
           </div>
         </div>
     </div>
