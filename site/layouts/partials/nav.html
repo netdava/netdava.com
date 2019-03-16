@@ -7,6 +7,19 @@
 
 	<!-- Primary Nav -->
 	<ul class="flex b grey-3">
+		<li>
+				{{ if .IsTranslated }}
+				{{ range .Translations }}
+				<a class="pa3 no-underline db" href="{{ .Permalink }}">{{ .Site.Language.LanguageName }}</a>
+				{{ end }}
+				{{ else }}
+				{{ if eq .Site.Language.Lang "en" }}
+				<a class="pa3 no-underline db" href="/">Română</a>
+				{{ else }}
+				<a class="pa3 no-underline db" href="/">English</a>
+				{{ end }}
+				{{ end }}
+		</li>
 		<li><a href="/" class="pa3 no-underline db">Home</a></li>
 		
 		<!-- <li><a href="/services" class="pa3 no-underline db">Services</a></li> -->

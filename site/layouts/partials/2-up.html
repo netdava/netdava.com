@@ -5,80 +5,37 @@
 
     <div class="services-wrapper">
 
-      <div class="card">
-        <div class="icon-wrapper">
-            <i class="fas fa-code"></i>
-        </div>
-       <h6>Web Development</h6>
-      </div>
-
-      <div class="card">
-        <div class="icon-wrapper">
-            <i class="fas fa-database"></i> <i class="fas fa-long-arrow-alt-right"></i> <i class="fas fa-file-invoice"></i>
-        </div>
-        <h6>PDF Report Design</h6>
-      </div>
-
-      <div class="card">
-        <div class="icon-wrapper">
-            <i class="fas fa-terminal"></i>
-        </div>
-        <h6>IT Application Development</h6>
-      </div>
-
-      <div class="card">
-        <div class="icon-wrapper">
-            <i class="fas fa-cookie-bite"></i>
-        </div>
-        <h6>GDPR and Cookie consent setup</h6>
-      </div>
-
+      {{ range .services }}
         <div class="card">
           <div class="icon-wrapper">
-              <i class="fas fa-recycle"></i>
+              <i class="{{ .icon }}"></i>
           </div>
-          <h6>Business Process Automation</h6> 
+         <h6>{{ .definition }}</h6>
         </div>
+      {{ end }}
+     
 
-        <div class="card">
-          <div class="icon-wrapper">
-              <i class="fas fa-robot"></i>
-          </div>
-          <h6>Business Digitalisation</h6>
-        </div>
+      
 
     </div>
-   
+  
     <h3 class="f3 b lh-title mb2">{{ .intro.expertise }}</h3>
-    <h4 class="f4 b lh-title mb2 primary tech-stack-title">Web Development</h4>
-    <div class="flexb">
-    {{ range .web_dev_technologies}}  
-    <article class="clients last">
-      <span></span><a href="{{ .href }}"><img src="{{ .src }}" alt="{{ .title }} + logo" /></a>
-      <h6>{{ .title }}</h6>
-    </article>
-    {{ end }}
-    </div>
 
-    <h4 class="f4 b lh-title mb2 primary mt3 tech-stack-title">Infrastrucure and code</h4>
+    {{ range .tech_stack }}
+    <h4 class="f4 b lh-title mb2 primary tech-stack-title">{{ .definition }}</h4>
     <div class="flexb">
-    {{ range .infrastrucure_and_code_technologies}}
-    <article class="clients last">
-      <span></span><a href="{{ .href }}"><img src="{{ .src }}" alt="{{ .title }} + logo" /></a>
-      <h6>{{ .title }}</h6>
-    </article>
+        {{ range .props }}  
+        <article class="clients last">
+          <span></span><a href="{{ .href }}"><img src="{{ .src }}" alt="{{ .title }} + logo" /></a>
+          <h6>{{ .title }}</h6>
+        </article>
+        {{ end }}
+        </div>
     {{ end }}
-    </div>
+   
+    
 
-    <h4 class="f4 b lh-title mb2 primary mt3 tech-stack-title">Data</h4>
-    <div class="flexb">
-    {{ range .data_technologies}}
-    <article class="clients last">
-      <span></span><a href="{{ .href }}"><img src="{{ .src }}" alt="{{ .title }} + logo" /></a>
-      <h6>{{ .title }}</h6>
-    </article>
-    {{ end }}
-    </div>
+    
     
     <!-- <div class="flex-ns mhn2-ns mb3">
       {{ range .products }}
