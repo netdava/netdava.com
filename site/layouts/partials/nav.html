@@ -1,34 +1,39 @@
-<nav class="overflow-x-scroll overflow-x-visible-ns flex justify-between items-center center bg-white divider-grey relative">
+<nav
+	class="overflow-x-scroll overflow-x-visible-ns flex justify-between items-center center bg-white divider-grey relative">
 
 	<!-- Logo -->
 	<a href="/" class="pa3 db mr4 h-100 w3 flex-none">
-		<img src="/img/netdava-logo.svg" alt="Netdava logo" class="br0 db mb0 w-100"/>
+		<img src="/img/netdava-logo.svg" alt="Netdava logo" class="br0 db mb0 w-100" />
 	</a>
 
 	<!-- Primary Nav -->
 	<ul class="flex b grey-3">
 		<li>
-				{{ if .IsTranslated }}
-				{{ range .Translations }}
-				<a class="pa3 no-underline db" href="{{ .Permalink }}">{{ .Site.Language.LanguageName }}</a>
-				{{ end }}
-				{{ else }}
-				{{ if eq .Site.Language.Lang "en" }}
-				<a class="pa3 no-underline db" href="/">Română</a>
-				{{ else }}
-				<a class="pa3 no-underline db" href="/">English</a>
-				{{ end }}
-				{{ end }}
+			{{ if .IsTranslated }}
+			{{ range .Translations }}
+			<a class="pa3 no-underline db" href="{{ .Permalink }}">{{ .Site.Language.LanguageName }}</a>
+			{{ end }}
+			{{ else }}
+			{{ if eq .Site.Language.Lang "en" }}
+			<a class="pa3 no-underline db" href="/">Română</a>
+			{{ else }}
+			<a class="pa3 no-underline db" href="/">English</a>
+			{{ end }}
+			{{ end }}
 		</li>
 		<li><a href="/" class="pa3 no-underline db">Home</a></li>
-		
+
 		<!-- <li><a href="/services" class="pa3 no-underline db">Services</a></li> -->
 
 		<!-- <li><a href="/values" class="pa3 no-underline db">Values</a></li> -->
 
 		<!-- <li><a href="/post" class="pa3 no-underline db">Blog</a></li> -->
-
-		<li><a href="/contact" class="pa3 no-underline db">Contact</a></li>
+		{{ if eq .Site.Language.Lang "en" }}
+		<li><a href="/en/contact" class="pa3 no-underline db">Contact</a></li>
+		{{ else }}
+		<li><a href="/ro/contact" class="pa3 no-underline db">Contact</a></li>
+		{{ end }}
+		
 	</ul>
 
 </nav>

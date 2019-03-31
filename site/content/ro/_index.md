@@ -26,7 +26,7 @@ services:
   - definition: Servicii de consultanță Cloud
     icon: 'fas fa-cloud-meatball'
 tech_stack:
-  - definition: Dezvoltare Webbbbbbbb
+  - definition: Dezvoltare Web
     props:
       - href: 'https://graphql.org'
         src: /img/technology-stack/graphql-logo.svg
