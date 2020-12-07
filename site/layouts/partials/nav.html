@@ -8,31 +8,29 @@
 
 	<!-- Primary Nav -->
 	<ul class="flex b grey-3">
-		<li>
+		
+		{{ if eq .Site.Language.Lang "en" }}
+		<li><a href="/" class="pa3 no-underline db">Home</a></li>
+		<li><a href="/en/contact" class="pa3 no-underline db">Contact</a></li>
+		{{ else }}
+		<li><a href="/" class="pa3 no-underline db">Acasă</a></li>
+		<li><a href="/ro/contact" class="pa3 no-underline db">Contact</a></li>
+		{{ end }}
+
+		<li class="language-selector">
+			
 			{{ if .IsTranslated }}
 			{{ range .Translations }}
 			<a class="pa3 no-underline db" href="{{ .Permalink }}">{{ .Site.Language.LanguageName }}</a>
 			{{ end }}
 			{{ else }}
 			{{ if eq .Site.Language.Lang "en" }}
-			<a class="pa3 no-underline db" href="/">Română</a>
+			<a class="pa3 no-underline db" href="/">română</a>
 			{{ else }}
-			<a class="pa3 no-underline db" href="/">English</a>
+			<a class="pa3 no-underline db" href="/">english</a>
 			{{ end }}
 			{{ end }}
 		</li>
-		<li><a href="/" class="pa3 no-underline db">Home</a></li>
-
-		<!-- <li><a href="/services" class="pa3 no-underline db">Services</a></li> -->
-
-		<!-- <li><a href="/values" class="pa3 no-underline db">Values</a></li> -->
-
-		<!-- <li><a href="/post" class="pa3 no-underline db">Blog</a></li> -->
-		{{ if eq .Site.Language.Lang "en" }}
-		<li><a href="/en/contact" class="pa3 no-underline db">Contact</a></li>
-		{{ else }}
-		<li><a href="/ro/contact" class="pa3 no-underline db">Contact</a></li>
-		{{ end }}
 		
 	</ul>
 
