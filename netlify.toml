@@ -1,8 +1,7 @@
 [build]
-  command = "yarn build"
-  publish = "dist"
+  command = "lein run"
+  publish = "public"
 [build.environment]
-  YARN_VERSION = "1.9.4"
 
 [context.deploy-preview]
-  command = "yarn build-preview"
+  command = "lein run"
