@@ -1,0 +1,23 @@
+= Ghidul dezvoltatorului
+
+Situl este un sit web static care folosește link:https://cryogenweb.org/[CryogenWeb].
+
+
+[source,shell]
+--
+    # Pentru dezvoltare locală - sit pe http://localhost:3000
+    lein ring server
+
+    # pentru a construi situl
+    lein run
+--
+
+
+== Găzduire și urcare în producție
+
+Situl este disponibil la https://www.netdava.com/.
+Situl este găzduit de serviciul gratuit netlifi.
+Situl este contruit de fiecare dată din ramura git master.
+Orice schimbări împinse în ramura `master` determină situl să fie reconstruit.
+
+Dacă aveți acces puteți să vedeți opțiunile de consturire la adresa: https://app.netlify.com/teams/ieugen/overview .
