@@ -1,0 +1,61 @@
+{% extends "/html/base.html" %}
+{% block content %}
+<div class="ui main text container vertical segment">
+    <h1 class="ui header">Contact Us</h1>
+    <p>We’d love to get in touch with you and hear your ideas and questions. We strive to grow and improve constantly and your feedback is valuable for us.</p>
+    <h1 class="ui header">How can we get in touch</h1>
+    <p>You can also use the form below for any inquiries about our services or scheduling a meeting with our consultants. Don’t be shy, drop us a line!</p>
+    <div class="ui main text container">
+        <div class="ui equal width stackable internally celled grid segment">
+          <div class="center aligned row">
+            <div class="column">
+              <h3 class="ui header">Location</h3>
+              <p>Ploiești, 100285 Aleea Arnăuți, Romania</p>
+            </div>
+            <div class="column">
+              <h3 class="ui header">Working hours</h3>
+              <p>
+                Monday – Friday: 9AM – 7PM
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="ui segment">
+            <h3 class="ui header">Drop us a line below</h3>
+          <form class="ui large form">
+              <div class="field">
+                <div class="two fields">
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="user icon"></i>
+                            <input type="text" name="name" placeholder="Name">
+                          </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="envelope icon"></i>
+                            <input type="text" name="email" placeholder="E-mail address">
+                          </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="field">
+                <div class="ui left corner labeled input">
+                    <div class="ui left corner label">
+                        <i class="asterisk icon"></i>
+                    </div>
+                    <textarea> Your message </textarea>
+                </div>
+              </div>
+              <div class="ui fluid large submit button">Send</div>
+            <div class="ui error message"></div>
+          </form>
+        </div>
+      </div>
+      <div class="ui middle aligned center aligned grid">
+        <div class="column">
+            
+        </div>
+      </div>
+</div>
+{% endblock %}

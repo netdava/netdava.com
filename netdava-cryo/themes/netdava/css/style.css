@@ -1,0 +1,227 @@
+.netdava-logo img {
+  height: 30px !important;
+  width: auto !important;
+}
+.secondMenu {
+  background-color: #fff !important;
+}
+
+.homeMasthead {
+  background: linear-gradient(90deg,#021048,#057ebd) !important;
+  clip-path: polygon(
+    0 0,
+    260% -100%,
+    80% 100%,
+    0 80%
+  );
+}
+.homepage-container {
+  color: #fff;
+}
+.homepage-container .column h1 {
+  color: #fff;
+}
+
+.ui.secondary.pointing.menu{
+  border: none;
+}
+.main-menu{
+  margin: 0 !important;
+  background: linear-gradient(90deg,#021048,#057ebd) !important;
+}
+.main-menu-items a.item, .main-menu-items .item {
+  color: #fff !important;
+}
+.hamburger-menu {
+  color:#fff !important;
+}
+.wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.custom-card {
+    vertical-align: middle;
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    margin-right: 12px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 2px 29px -15px #000;
+    box-shadow: 0 2px 29px -15px #000;
+}
+/* services cards */
+.service-card-wrapper {
+    width: 250px;
+    height: 200px;
+}
+.services-wrapper .column:nth-child(even) .service-card-wrapper {
+    background-color: gainsboro;
+}
+.services-wrapper .column:nth-child(odd) .service-card-wrapper {
+    background-color: darkgray;
+}
+.service-card-wrapper .description span {
+    font-size: 1.4rem;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+.service-card-wrapper .content .header {
+    padding-top: 50px;
+}
+.service-card-wrapper .icon {
+    font-size: 1.8em;
+}
+
+/* End services cards */
+
+/* fomantic homepage example style */
+.card .stack-image {
+    background: none !important;
+    border: 0 !important;
+}
+.we-use-wrapper {
+  display: flex;
+  justify-content: center;
+    flex-wrap:wrap;
+}
+.tech-wrapper {
+  display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 150px;
+	height: 100px;
+	margin-right: 12px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 2px 9px -5px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 2px 9px -5px rgba(0,0,0,1);
+    box-shadow: 0px 2px 9px -5px rgba(0,0,0,1);
+}
+.tech-img-wrapper{
+  width: 150px;
+  height: 100%;
+  display: inline-block;
+}
+.tech-wrapper img {
+  width:50%;
+  filter: grayscale(1.0);
+}
+.tech-wrapper:hover img {
+  filter: none;
+    width: 55%;
+    -webkit-transition: .2s;
+}
+.tech-wrapper span {
+  display: inline-block;
+	height: 100%;
+	width: 1px;
+}
+.tech-wrapper * {
+  vertical-align: middle;
+}
+
+.tech-wrapper h5 {
+  margin-top: 10px;
+}
+
+.hidden.menu {
+    display: none;
+  }
+
+  .masthead.segment {
+    min-height: 600px;
+    padding: 1em 0em;
+  }
+  .masthead .logo.item img {
+    margin-right: 1em;
+    height: 100px;
+  }
+  .masthead .ui.menu .ui.button {
+    margin-left: 0.5em;
+  }
+  .masthead h1.ui.header {
+    margin-bottom: 0em;
+    font-size: 4em;
+    font-weight: normal;
+  }
+  .masthead h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+  }
+
+  .ui.vertical.stripe {
+    padding: 8em 0em;
+  }
+  .ui.vertical.stripe h3 {
+    font-size: 2em;
+  }
+  .ui.vertical.stripe .button + h3,
+  .ui.vertical.stripe p + h3 {
+    margin-top: 3em;
+  }
+  .ui.vertical.stripe .floated.image {
+    clear: both;
+  }
+  .ui.vertical.stripe p {
+    font-size: 1.33em;
+  }
+  .ui.vertical.stripe .horizontal.divider {
+    margin: 3em 0em;
+  }
+
+  .quote.stripe.segment {
+    padding: 0em;
+  }
+  .quote.stripe.segment .grid .column {
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+
+  .footer.segment {
+    padding: 5em 0em;
+  }
+
+  .secondary.pointing.menu .toc.item {
+    display: none;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .ui.fixed.menu {
+      display: none !important;
+    }
+    .secondary.pointing.menu .item,
+    .secondary.pointing.menu .menu {
+      display: none;
+    }
+    .secondary.pointing.menu .toc.item {
+      display: block;
+    }
+    .masthead.segment {
+      min-height: 350px;
+    }
+    .masthead h1.ui.header {
+      font-size: 2em;
+      margin-top: 1.5em;
+    }
+    .masthead h2 {
+      margin-top: 0.5em;
+      font-size: 1.5em;
+    }
+    .why-nedtava {
+        text-align: center;
+    }
+  }
+
+/* END fomantic homepage example style */
