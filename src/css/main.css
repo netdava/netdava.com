@@ -175,3 +175,9 @@ article.clients h6 {
 .card .icon-wrapper i {
     font-size: 1.8em;
 }
+.language-selector a{
+    display:inline-block;
+    padding-left: 0;
+}
+.language-selector {
+}

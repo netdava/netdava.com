@@ -8,10 +8,10 @@ defaultContentLanguageInSubdir= true
 [languages]
   
   [languages.en]
-    languageName = "English"
+    languageName = "en"
     contentDir = "content/en"
     
 
   [languages.ro]
-    languageName = "Română"
+    languageName = "ro"
     contentDir = "content/ro"
