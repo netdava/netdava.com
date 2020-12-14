@@ -44,6 +44,7 @@
                 $('.ui.sidebar')
                     .sidebar('attach events', '.toc.item')
                     ;
+                
                 // show dropdown on hover
                 $('.menu .ui.dropdown').dropdown({
                     on: 'hover'
@@ -97,8 +98,8 @@
             <img src="{{index-uri}}img/netdava-menu-logo.png">
         </a>
         <a href="/" class="ui item">Home</a>
-        <div class="ui dropdown item">
-            Services <i class="dropdown icon"></i>
+        <div class="item">
+            <b>Services</b>
             <div class="menu">
                 <a class="item" href="{{index-uri}}pages/web-development">Web Development</a>
                 <a class="item" href="{{index-uri}}pages/report-design">PDF Report Design</a>
@@ -107,7 +108,8 @@
                 <a class="item" href="{{index-uri}}pages/business-digitalisation">Business Digitalisation</a>
                 <a class="item" href="{{index-uri}}pages/cloud-consultancy-services">Cloud consultancy services</a>
             </div>
-        </div>
+          </div>
+       
         <a href="{{index-uri}}pages/contact" class="ui item">Contact</a>
     </div>
 
