@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" />
+    <title>Netdava</title>
+    
+    <meta name="description" content="Technology working for you">
+    <meta name="keywords" content="">
+    
+    <link rel="canonical" href="https://www.netdava.com/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
+
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
+    <script src="/js/visibility.js" type="application/javascript"></script>
+    <script src="/js/sidebar.js" type="application/javascript"></script>
+    <script src="/js/transition.js" type="application/javascript"></script>
+    <script src="/js/dropdown.js" type="application/javascript"></script>
+    <script>
+        $(document)
+            .ready(function () {
+
+                // fix menu when passed
+                $('.masthead')
+                    .visibility({
+                        once: false,
+                        onBottomPassed: function () {
+                            $('.fixed.menu').transition('fade in');
+                        },
+                        onBottomPassedReverse: function () {
+                            $('.fixed.menu').transition('fade out');
+                        }
+                    })
+                    ;
+
+                // create sidebar and attach to menu open
+                $('.ui.sidebar')
+                    .sidebar('attach events', '.toc.item')
+                    ;
+                // show dropdown on hover
+                $('.menu .ui.dropdown').dropdown({
+                    on: 'hover'
+                });
+
+            })
+            ;
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Following Menu -->
+    <div class="ui large top fixed hidden secondary pointing menu secondMenu">
+        <div class="ui container">
+            <a class="logo item netdava-logo">
+                <img src="/img/netdava-menu-logo.png">
+            </a>
+            <div class="right menu">
+                <a href="/" class="ui item">Home</a>
+                <div class="ui dropdown item">
+                    Services <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" href="/pages/web-development">Web Development</a>
+                        <a class="item" href="/pages/report-design">PDF Report Design</a>
+                        <a class="item" href="/pages/it-app-development">IT Application Development</a>
+                        <a class="item" href="/pages/business-process-automation">Business Process
+                            Automation</a>
+                        <a class="item" href="/pages/business-digitalisation">Business Digitalisation</a>
+                        <a class="item" href="/pages/cloud-consultancy-services">Cloud consultancy
+                            services</a>
+                    </div>
+                </div>
+                <a href="/pages/contact" class="ui item">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="ui vertical sidebar menu">
+        <a class="logo item netdava-logo">
+            <img src="/img/netdava-menu-logo.png">
+        </a>
+        <a href="/" class="ui item">Home</a>
+        <div class="ui dropdown item">
+            Services <i class="dropdown icon"></i>
+            <div class="menu">
+                <a class="item" href="/pages/web-development">Web Development</a>
+                <a class="item" href="/pages/report-design">PDF Report Design</a>
+                <a class="item" href="/pages/it-app-development">IT Application Development</a>
+                <a class="item" href="/pages/business-process-automation">Business Process Automation</a>
+                <a class="item" href="/pages/business-digitalisation">Business Digitalisation</a>
+                <a class="item" href="/pages/cloud-consultancy-services">Cloud consultancy services</a>
+            </div>
+        </div>
+        <a href="/pages/contact" class="ui item">Contact</a>
+    </div>
+
+    <div class="pusher">
+        <div class="ui large secondary pointing menu main-menu">
+            <div class="ui container">
+                <a class="toc item">
+                    <i class="bars icon hamburger-menu"></i>
+                </a>
+                <a class="logo item netdava-logo">
+                    <img src="/img/netdava-menu-logo-white.png">
+                </a>
+                <div class="right menu main-menu-items">
+                    <a href="/" class="ui item">Home</a>
+                    <div class="ui dropdown item">
+                        Services <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item" href="/pages/web-development">Web Development</a>
+                            <a class="item" href="/pages/report-design">PDF Report Design</a>
+                            <a class="item" href="/pages/it-app-development">IT Application Development</a>
+                            <a class="item" href="/pages/business-process-automation">Business Process
+                                Automation</a>
+                            <a class="item" href="/pages/business-digitalisation">Business
+                                Digitalisation</a>
+                            <a class="item" href="/pages/cloud-consultancy-services">Cloud consultancy
+                                services</a>
+                        </div>
+                    </div>
+                    <a href="/pages/contact" class="ui item">Contact</a>
+                </div>
+            </div>
+        </div>
+        
+<div class="ui vertical masthead center aligned segment homeMasthead">
+      <div class="ui middle aligned grid container homepage-container">
+          <div class="eight wide column">
+            <h1 class="ui header">Netdava</h1>
+            <h3>Technology working for you</h3>
+            <div class="ui primary button">Our services</div>
+          </div>
+          <div class="eight wide right floated column">
+            <img src="/img/problem_solving.png" class="ui huge rounded image">
+          </div>
+      </div>
+     
+</div>
+<div class="ui text main container">
+  <div class="ui vertical stripe">
+    <div class="ui stackable grid">
+      <div class="row why-nedtava">
+        <div class="six wide column">
+          <h1 class="ui big header">Why Netdava?</h1>
+        </div>
+        <div class="ten wide column">
+          <p>Netdava is a company built from passion to deliver great value to it's customers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui main text center aligned container">
+   <div class="ui vertical stripe">
+    <div class="ui grid center aligned">
+      <div class="row">
+        <h1 class="ui big header">What we offer</h1>
+        <p>Netdava offers a range of IT services that can add value to your business. We love building API's,
+          Software-as-a-Service systems and similar software. We also offer consultancy in this area and can
+          work together with your team.</p>
+      </div>
+    </div>
+   </div>
+  </div>
+</div>
+<div class="ui three column stackable grid container">
+<div class="column">
+  <div class="ui center aligned segment">
+    <img src="/img/services/web_design.png" style="height: 150px;" class="ui centered image">
+    <h2 class="ui header">Web Development</h2>
+    <a class="ui tertiary button" href="/pages/web-development">Find out more</a>
+  </div>
+</div>
+<div class="column">
+  <div class="ui center aligned segment">
+    <img src="/img/services/pdf_report.png" style="height: 150px;" class="ui centered image">
+    <h2 class="ui centered header">PDF Report Design</h2>
+    <a class="ui tertiary button" href="/pages/report-design">Find out more</a>
+  </div>
+</div>
+<div class="column">
+  <div class="ui center aligned segment">
+    <img src="/img/services/app_development.png" style="height: 150px;" class="ui centered image">
+    <h2 class="ui centered header">IT Application Development</h2>
+    <a class="ui tertiary button" href="/pages/it-app-development">Find out more</a>
+  </div>
+</div>
+<div class="column">
+  <div class="ui center aligned segment">
+    <img src="/img/services/business.png" style="height: 150px;" class="ui centered image">
+    <h2 class="ui header">Business Process Automation</h2>
+    <a class="ui tertiary button" href="/pages/business-process-automation">Find out more</a>
+  </div>
+</div>
+<div class="column">
+  <div class="ui center aligned segment">
+    <img src="/img/services/startup.png" style="height: 150px;" class="ui centered image">
+    <h2 class="ui header">Business Digitalisation</h2>
+    <a class="ui tertiary button" href="/pages/business-digitalisation">Find out more</a>
+  </div>
+</div>
+<div class="column">
+  <div class="ui center aligned segment">
+    <img src="/img/services/cloud_services.png" style="height: 150px;" class="ui centered image">
+    <h2 class="ui header">Cloud consultancy services</h2>
+    <a class="ui tertiary button" href="/pages/cloud-consultancy-services">Find out more</a>
+  </div>
+</div>
+</div>
+
+  <div class="ui main container vertical stripe">
+    <h1 class="ui header center aligned">
+      We have expertise with the following technologies:
+    </h1>
+  
+    <h4 class="ui horizontal divider header">
+      <i class="file code icon"></i>
+      Web development
+    </h4>
+    <div class="we-use-wrapper">
+      <div class="tech-wrapper">
+        <span></span>
+        <a href="https://graphql.org">
+          <img src="https://www.netdava.com/img/technology-stack/graphql-logo.svg">
+        </a>
+        <h5>GraphQL</h5>
+      </div>
+      <div class="tech-wrapper">
+        <span></span>
+        <a href="https://www.javascript.com">
+          <img src="https://www.netdava.com/img/technology-stack/javascript-logo.svg">
+        </a>
+        <h5>JavaScript</h5>
+      </div>
+      <div class="tech-wrapper">
+        <span></span>
+        <a href="https://reactjs.org">
+          <img src="https://www.netdava.com/img/technology-stack/react-logo.svg">
+        </a>
+        <h5>React</h5>
+      </div>
+      <div class="tech-wrapper">
+        <span></span>
+        <a href="https://gohugo.io">
+          <img src="https://www.netdava.com/img/technology-stack/hugo-logo.svg">
+        </a>
+        <h5>Hugo</h5>
+      </div>
+      <div class="tech-wrapper">
+        <span></span>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3">
+          <img src="https://www.netdava.com/img/technology-stack/css3-logo.svg">
+        </a>
+        <h5>CSS3</h5>
+      </div>
+      <div class="tech-wrapper">
+        <span></span>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">
+          <img src="https://www.netdava.com/img/technology-stack/html5-logo.svg">
+        </a>
+        <h5>HTML5</h5>
+      </div>
+      <div class="tech-wrapper">
+        <span></span>
+        <a href="https://sass-lang.com">
+          <img src="https://www.netdava.com/img/technology-stack/sass-logo.svg">
+        </a>
+        <h5>SaSS</h5>
+      </div>
+      <div class="tech-wrapper">
+        <span></span>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX">
+          <img src="https://www.netdava.com/img/technology-stack/ajax-logo.svg">
+        </a>
+        <h5>Ajax</h5>
+      </div>
+    </div>
+  
+    <h4 class="ui horizontal divider header">
+      <i class="laptop code icon"></i>
+      Infrastructure and code
+    </h4>
+    <div class="we-use-wrapper">
+      <div class="tech-wrapper">
+        <span></span>
+        <a href="https://kubernetes.io/">
+          <img src="https://www.netdava.com/img/technology-stack/kubernetes-logo.svg">
+        </a>
+        <h5>Kubernetes</h5>
+      </div>
+      <div class="tech-wrapper">
+        <span></span>
+        <a href="https://www.terraform.io/">
+          <img src="https://www.netdava.com/img/technology-stack/terraform-logo.svg">
+        </a>
+        <h5>Terraform</h5>
+      </div>
+      <div class="tech-wrapper">
+        <span></span>
+        <a href="https://git-scm.com/">
+          <img src="https://www.netdava.com/img/technology-stack/git-logo.svg">
+        </a>
+        <h5>Git</h5>
+      </div>
+      <div class="tech-wrapper">
+        <span></span>
+        <a href="https://gradle.org/">
+          <img src="https://www.netdava.com/img/technology-stack/gradle-logo.svg">
+        </a>
+        <h5>Gradle</h5>
+      </div>
+      <div class="tech-wrapper">
+        <span></span>
+        <a href="https://www.java.com">
+          <img src="https://www.netdava.com/img/technology-stack/java-logo.svg">
+        </a>
+        <h5>Java</h5>
+      </div>
+      <div class="tech-wrapper">
+        <span></span>
+        <a href="https://nodejs.org/en/">
+          <img src="https://www.netdava.com/img/technology-stack/nodejs-logo.svg">
+        </a>
+        <h5>Node.js</h5>
+      </div>
+      <div class="tech-wrapper">
+        <span></span>
+        <a href="https://www.omg.org/bpmn/">
+          <img src="https://www.netdava.com/img/technology-stack/bpmn-logo.svg">
+        </a>
+        <h5>Business Process Model & Notation</h5>
+      </div>
+      <div class="tech-wrapper">
+        <span></span>
+        <a href="https://camunda.com/">
+          <img src="https://www.netdava.com/img/technology-stack/camunda-logo.svg">
+        </a>
+        <h5>Camunda</h5>
+      </div>
+      <div class="tech-wrapper">
+        <span></span>
+        <a href="https://oauth.net/2/">
+          <img src="https://www.netdava.com/img/technology-stack/oauth-2-sm.png">
+        </a>
+        <h5>Oauth2</h5>
+      </div>
+      <div class="tech-wrapper">
+        <span></span>
+        <a href="https://openid.net/">
+          <img src="https://www.netdava.com/img/technology-stack/openid-icon-100x100.png">
+        </a>
+        <h5>OpenId Connect</h5>
+      </div>
+    </div>
+      <h4 class="ui horizontal divider header">
+      <i class="server icon"></i>
+      Data
+    </h4>
+    <div class="we-use-wrapper">
+      <div class="tech-wrapper">
+        <span></span>
+        <a href="https://www.postgresql.org/">
+          <img src="https://www.netdava.com/img/technology-stack/postgresql-logo.svg">
+        </a>
+        <h5>PostgreSQL</h5>
+      </div>
+      <div class="tech-wrapper">
+        <span></span>
+        <a href="https://www.sqlite.org/index.html">
+          <img src="https://www.netdava.com/img/technology-stack/sqlite-logo.svg">
+        </a>
+        <h5>SQLite</h5>
+      </div>
+  </div>
+
+  </div>
+
+  
+        <div class="ui inverted vertical footer segment">
+            <div class="ui container">
+                <div class="ui stackable inverted divided equal height stackable center aligned grid">
+                    <div class="five wide column">
+                        <h4 class="ui inverted header">About</h4>
+                        <div class="ui inverted link list">
+                            <a href="/pages/contact" class="item">Contact Us</a>
+                            <a class="item" href="//sitemap.xml">Site Map</a>
+                            <a class="item" href="#">Terms and Conditions</a>
+                            <a class="item" href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                    <div class="five wide column">
+                        <h4 class="ui inverted header">Services</h4>
+                        <div class="ui inverted link list">
+                            <a class="item" href="/pages/web-development">Web Development</a>
+                            <a class="item" href="/pages/report-design">PDF Report Design</a>
+                            <a class="item" href="/pages/it-app-development">IT Application Development</a>
+                            <a class="item" href="/pages/business-process-automation">Business Process
+                                Automation</a>
+                            <a class="item" href="/pages/business-digitalisation">Business
+                                Digitalisation</a>
+                            <a class="item" href="/pages/cloud-consultancy-services">Cloud consultancy
+                                services</a>
+                        </div>
+                    </div>
+                    <div class="five wide column">
+                        <h3 class="ui inverted header">Social</h3>
+                        <a href="https://twitter.com/netdava" class="item"><i class="twitter large icon"></i></a>
+                        <a href="#" class="item"><i class="facebook large icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
