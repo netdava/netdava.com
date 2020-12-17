@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" />
-    <title>{{title}}{% block subtitle %}{% endblock %}</title>
+    <title>{{page.title}}{% block subtitle %}{% endblock %}</title>
     {% block meta %}
     <meta name="description" content="{{description}}">
     <meta name="keywords" content="">
@@ -44,7 +44,7 @@
                 $('.ui.sidebar')
                     .sidebar('attach events', '.toc.item')
                     ;
-                
+
                 // show dropdown on hover
                 $('.menu .ui.dropdown').dropdown({
                     on: 'hover'
@@ -62,6 +62,11 @@
 
         gtag('config', 'G-M041QK80R5');
     </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    {% script "js/index/lunr_index.js" %}
+    {% script "js/lunrclient.js" %}
+    {% script "js/theme-scripts.js" %}
+    <script>window.onload = start;</script>
 </head>
 
 <body>
@@ -108,8 +113,8 @@
                 <a class="item" href="{{index-uri}}pages/business-digitalisation">Business Digitalisation</a>
                 <a class="item" href="{{index-uri}}pages/cloud-consultancy-services">Cloud consultancy services</a>
             </div>
-          </div>
-       
+        </div>
+
         <a href="{{index-uri}}pages/contact" class="ui item">Contact</a>
     </div>
 
@@ -123,6 +128,12 @@
                     <img src="{{index-uri}}img/netdava-menu-logo-white.png">
                 </a>
                 <div class="right menu main-menu-items">
+                    <form id="lunrSearchForm" name="lunrSearchForm" action="/pages/search" class="ui item">
+                        <div class="ui mini icon input">
+                            <input type="text" placeholder="Enter search term..." name="q">
+                            <i class="search icon"></i>
+                        </div>
+                    </form>
                     <a href="/" class="ui item">Home</a>
                     <div class="ui dropdown item">
                         Services <i class="dropdown icon"></i>
