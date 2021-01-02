@@ -1,0 +1,79 @@
+= Netdava.com
+
+@Adrian
+
+* Pagini pentru fiecare link.
+* Home să fie cu about us ?!
+
+Pagina cu servicii
+Nu înțelege ce sunt
+** PDF Report Design
+** Business digitalization
+
+* prea mult spațiu alb pe pagină
+* Imaginea să aivă click - să intre mai rapid
+
+* Bread crumb-uri pe pagină să poată naviga ușor utilizatorul
+* Ortogragie neuniformă: PDF Pdf
+* Fly button - să revii sus la pagină să nu dai scrol
+
+La web development
+* Subtitlu cu invitație la acțiune: Click to see projects where we used the technologies
+* Headerul mai mare (Web development, infrastructure, etc)
+
+Our projects / case studies
+
+* Listă de articole despre proiect / case studiuri
+* Articolele vor avea etichete cu tehnologiile folosite
+* Putem avea link de la lista de tehnologii la
+
+După ce facem mai multe proiecte, le împărțim pe industrii.
+
+
+Să fie un user journey - o călaătorie pe site.
+
+== Footer
+
+La footer - link spre case studie / our projects.
+
+* Help and Infromation
+* Contact direct in footer
+
+== Banner principal
+
+Butonul de servicii să fie mutat mai sus in stânga și să fie un carusel.
+
+Scopul final este să interacționeze cu noi deci trebuie să avem butoane cu `Call to action`: Ask us, Get a quote, Cumpără pachet, Cumpără serviciu, Cumpără design web.
+
+
+Mesajul - să conțină 3 puncte
+
+* Cum lucram / ce facem ( "Hai să discutăm" - ceașcă de cafea - Java)
+** Consultanță si design
+** Servicii pe care le oferim -> O listă scurtă ?!
+** Contruim aplicația
+** Mentenanță software
+** Cum testăm ????
+* Cu cine am lucrat / Testimoniale / Clienții noștrii / Cu ce ne mândrim
+** Să obțin testimoniale de la clienți
+* Ce am construit - Proiectele noastre
+* Tehnolgiile cu care lucrăm
+
+IMPORTANT: Buton de acțiune după fiecare secțiune - cu mesaj.
+
+== Pentru Google
+
+* Să folosim termeni pe care oamenii să îi caute /îi caută: We build web applications - netdava.com
+* We can deploy your website
+* We can help your business grow online
+* We can make your website visible online
+* (acțiune, cum îmbunătățim viața utilizatorului)
+
+== Implementare NPS - Net promoter score
+
+* Utilizatorii să poată da feedback pe site/pagină - dacă îi place, nu îi place, etc.
+
+
+== Newsletter !?!
+
+* E prea mult acum
